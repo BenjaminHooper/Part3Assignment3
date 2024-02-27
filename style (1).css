@@ -1,45 +1,102 @@
-/* General setup */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
-}
-
-/* Layout */
-
-section {
-  float: left;
-  width: 50%;
-}
-
-aside {
-  float: left;
-  width: 30%;
-}
-
-nav {
-  float: left;
-  width: 20%;
-}
-
-footer {
-  clear: both;
-}
-
-header, section, aside, nav, footer {
-  padding: 20px;
-}
-
-/* header and footer */
-
-header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
-}
-
 /* WRITE YOUR CODE BELOW HERE */
+
+/* Fonts */
+body {
+  font-family: 'SerifFont', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'SansSerifFont', sans-serif;
+}
+
+html {
+  font-size: 10px; /* Set font size to 10px */
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  word-spacing: 0.02em;
+}
+
+section > p:first-of-type {
+  text-indent: 20px;
+}
+
+/* Links */
+a:link,
+a:visited {
+  color: red;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: orange;
+  font-weight: bold;
+}
+
+/* External link icon */
+a[href^="http://"],
+a[href^="https://"]::after {
+  content: url('external-link-52.png');
+  margin-left: 5px;
+}
+
+/* Lists */
+ul,
+ol {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+li {
+  line-height: 1.6;
+  list-style-type: url('Bullet.png');
+}
+
+/* Navigation menu */
+nav {
+  background-color: grey;
+  border-right: 2px solid red;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: grey;
+}
